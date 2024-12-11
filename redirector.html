@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			const urlParams = new URLSearchParams(window.location.search);
+			var target = urlParams.get("p");
+			if (target.startsWith("www") || target.startsWith("etsy.com")) {
+				target = "https://" + target;
+			}
+			window.location.replace(target);
+		</script>
+	</head>
+</html>
